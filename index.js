@@ -25,10 +25,10 @@ for(let q in quesAns){
 }
 
 if(score < 2){
-  scoreComment = "You actually don't know Kaustubh";
+  scoreComment = "Verdict : You actually don't know Kaustubh";
 }else if(score >=2 && score <=3){
-  scoreComment = "You actually know something about Kaustubh";
+  scoreComment = "Verdict : You actually know something about Kaustubh";
 }else{
-  scoreComment = "You actually know Kaustubh";
+  scoreComment = "Verdict : You actually know Kaustubh";
 }
 console.log(scoreComment);
