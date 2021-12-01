@@ -8,7 +8,9 @@ let scoreComment;
 let quesAns = {
   q1: ['What is my favorite Superhero?','Spiderman'],
   q2 : ['Am I a Coffee/Chai/Bournvita person ?','Bournvita'],
-  q3 : ['What country do I live in?', 'India']
+  q3 : ['What country do I live in?', 'India'],
+  q4 : ['Am I Older than 22 ?','Yes'],
+  q5 : ['What is my favorite movie ?','The Man From Earth']
 }
 
 for(let q in quesAns){
@@ -22,9 +24,9 @@ for(let q in quesAns){
   console.log(`Your Score : ${score}`);
 }
 
-if(score===0){
+if(score < 2){
   scoreComment = "You actually don't know Kaustubh";
-}else if(score === 1){
+}else if(score >=2 && score <=3){
   scoreComment = "You actually know something about Kaustubh";
 }else{
   scoreComment = "You actually know Kaustubh";
